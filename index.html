@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/Todo-list/css/style.css" />
     <link rel="stylesheet" href="/Todo-list/css/addNewTask.css" />
-    <link rel="stylesheet" href="/Todo-list/css/headerText.css" />
     <link rel="stylesheet" href="/Todo-list/css/listTask.css" />
     <link rel="stylesheet" href="/Todo-list/css/container.css" />
     <script defer src="/Todo-list/js/script.js"></script>
@@ -27,17 +26,21 @@
   </head>
   <body class="body">
     <div class="container">
-      <p class="div__paragraphHeaderText">Lista zadań</p>
-      <p class="div__paragraphAddNewTask">Dodaj nowe zadanie</p>
-      <form class="js-form div__form">
-        <input
-          placeholder="Co jest do zrobienia?"
-          class="js-newTask div__formInput"
-        />
-        <button class="div__button">Dodaj zadanie</button>
-      </form>
+      <header class="div__HeaderText">
+        <h1>Lista zadań</h1>
+      </header>
+      <section class="section__newTaks">
+        <h2 class="section__paragraphAddNewTask">Dodaj nowe zadanie</h2>
+        <form class="js-form form">
+          <input
+            placeholder="Co jest do zrobienia?"
+            class="js-newTask formInput"
+          />
+          <button class="div__button">Dodaj zadanie</button>
+        </form>
+      </section>
       <section class="div__sectionListTask">
-        <p class="section__paragraphListTask">Lista zadań</p>
+        <h2 class="section__paragraphListTask">Lista zadań</h2>
         <ul class="js-tasks section__ul"></ul>
       </section>
     </div>

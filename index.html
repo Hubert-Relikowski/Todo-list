@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Todo-list/css/style.css" />
+    <link rel="stylesheet" href="/Todo-list/css/addNewTask.css" />
+    <link rel="stylesheet" href="/Todo-list/css/headerText.css" />
+    <link rel="stylesheet" href="/Todo-list/css/listTask.css" />
+    <link rel="stylesheet" href="/Todo-list/css/container.css" />
+    <script defer src="/Todo-list/js/script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+  <body class="body">
+    <div class="container">
+      <p class="div__paragraphHeaderText">Lista zadań</p>
+      <p class="div__paragraphAddNewTask">Dodaj nowe zadanie</p>
+      <form class="js-form div__form">
+        <input
+          placeholder="Co jest do zrobienia?"
+          class="js-newTask div__formInput"
+        />
+        <button class="div__button">Dodaj zadanie</button>
+      </form>
+      <section class="div__sectionListTask">
+        <p class="section__paragraphListTask">Lista zadań</p>
+        <ul class="js-tasks section__ul"></ul>
+      </section>
+    </div>
+  </body>
+</html>

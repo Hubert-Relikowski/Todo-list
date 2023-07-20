@@ -1,13 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/Todo-list/css/style.css" />
-    <link rel="stylesheet" href="/Todo-list/css/addNewTask.css" />
-    <link rel="stylesheet" href="/Todo-list/css/listTask.css" />
-    <link rel="stylesheet" href="/Todo-list/css/container.css" />
-    <script defer src="/Todo-list/js/script.js"></script>
+    <title>Lista zadań</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -18,31 +14,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
-
-    <title>Document</title>
+    <link href="css/container.css" rel="stylesheet" />
+    <link href="css/form.css" rel="stylesheet" />
+    <link href="css/section.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/tasks.css" rel="stylesheet" />
+    <script defer src="js/script.js"></script>
   </head>
-  <body class="body">
-    <div class="container">
-      <header class="div__HeaderText">
-        <h1>Lista zadań</h1>
+
+  <body>
+    <main class="container">
+      <header>
+        <h1>Lista Zadań</h1>
       </header>
-      <section class="section__newTaks">
-        <h2 class="section__paragraphAddNewTask">Dodaj nowe zadanie</h2>
-        <form class="js-form form">
-          <input
-            placeholder="Co jest do zrobienia?"
-            class="js-newTask formInput"
-          />
-          <button class="div__button">Dodaj zadanie</button>
-        </form>
+
+      <section class="section">
+        <h2 class="section__header">Dodaj nowe zadanie</h2>
+        <div class="section__body">
+          <form class="form js-form">
+            <input
+              class="form__input js-newTask"
+              placeholder="Co jest do zrobienia?"
+            />
+            <button class="form__button">Dodaj zadanie</button>
+          </form>
+        </div>
       </section>
-      <section class="div__sectionListTask">
-        <h2 class="section__paragraphListTask">Lista zadań</h2>
-        <ul class="js-tasks section__ul"></ul>
+      <section class="section">
+        <h2 class="section__header">Lista zadań</h2>
+        <div class="section__body">
+          <ul class="tasks js-tasks"></ul>
+        </div>
       </section>
-    </div>
+    </main>
   </body>
 </html>
